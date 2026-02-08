@@ -22,7 +22,7 @@ jobs:
             os_name: Windows
             artifact_name: SimpleKaruzi-Windows
             asset_name: SimpleKaruzi-Windows.zip
-          - os: macos-13
+          - os: macos-15-intel
             os_name: macOS-Intel
             artifact_name: SimpleKaruzi-macOS-Intel
             asset_name: SimpleKaruzi-macOS-Intel.zip
@@ -49,9 +49,7 @@ jobs:
 
     - name: Compile Translations
       run: |
-        pylupdate6 Scripts/pages/*.py Scripts/*.py SimpleKaruzi.py -ts Translations/en_US.ts Translations/zh_CN.ts
-        python Scripts/auto_translate_ts.py
-        lrelease Translations/en_US.ts Translations/zh_CN.ts
+        python Scripts/build_translations.py
 
     - name: Build with PyInstaller (Windows)
       if: runner.os == 'Windows'
