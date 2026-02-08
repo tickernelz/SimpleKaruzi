@@ -418,6 +418,17 @@ class OCS(FluentWindow):
         sys.excepthook = handle_exception
 
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+
 if __name__ == "__main__":
     backend = Backend()
     
@@ -428,23 +439,25 @@ if __name__ == "__main__":
     
     lang_setting = backend.settings.get("language")
     
-    qm_file = ""
+    qm_filename = ""
     
     if lang_setting == "Auto" or not lang_setting:
         locale = QLocale.system()
         if locale.language() == QLocale.Language.Chinese:
-            qm_file = "Translations/zh_CN.qm"
+            qm_filename = "zh_CN.qm"
         else:
-            qm_file = "Translations/en_US.qm"
+            qm_filename = "en_US.qm"
     else:
         if lang_setting == "zh_CN":
-            qm_file = "Translations/zh_CN.qm"
+            qm_filename = "zh_CN.qm"
         elif lang_setting == "en_US":
-            qm_file = "Translations/en_US.qm"
+            qm_filename = "en_US.qm"
     
-    if qm_file and os.path.exists(qm_file):
-        if translator.load(qm_file):
-            app.installTranslator(translator)
+    if qm_filename:
+        qm_path = resource_path(os.path.join("Translations", qm_filename))
+        if os.path.exists(qm_path):
+            if translator.load(qm_path):
+                app.installTranslator(translator)
     
     saved_theme = backend.settings.get("theme")
     if saved_theme == "Light":
