@@ -225,23 +225,23 @@
 <context>
     <name>AudioLayoutCard</name>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="45"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="48"/>
         <source>音频布局 ID (Layout ID)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="46"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="49"/>
         <source>为您的音频编解码器选择布局 ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="52"/>
-        <location filename="../Scripts/pages/configuration_page.py" line="68"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="55"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="71"/>
         <source>未配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="56"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="59"/>
         <source>配置布局</source>
         <translation type="unfinished"></translation>
     </message>
@@ -789,102 +789,102 @@
 <context>
     <name>ConfigurationPage</name>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="127"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="134"/>
         <source>配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="130"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="137"/>
         <source>配置您的 OpenCore EFI 设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="145"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="152"/>
         <source>配置补丁</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="147"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="154"/>
         <source>ACPI 补丁</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="148"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="155"/>
         <source>自定义系统 ACPI 表修改以适配硬件</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="155"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="162"/>
         <source>管理 Kexts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="157"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="164"/>
         <source>内核扩展 (Kexts)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="158"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="165"/>
         <source>配置硬件所需的驱动程序</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="191"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="198"/>
         <source>部分硬件组件已从配置中排除</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="193"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="200"/>
         <source>请先选择硬件报告</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="195"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="202"/>
         <source>请先选择目标 macOS 版本</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="197"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="204"/>
         <source>所有硬件组件均兼容并已启用</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="201"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="208"/>
         <source>兼容性状态</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="212"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="219"/>
         <source>不兼容</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="212"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="219"/>
         <source>已禁用</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="231"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="238"/>
         <source>macOS 版本已更新为 {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="240"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="247"/>
         <source>ACPI 补丁配置已更新</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="247"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="254"/>
         <source>Kext 配置已更新</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="262"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="269"/>
         <source>音频布局 ID 已更新为 {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="277"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="284"/>
         <source>SMBIOS 机型已更新为 {}</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1000,6 +1000,134 @@
     </message>
 </context>
 <context>
+    <name>HomePage</name>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="92"/>
+        <source>欢迎使用 SimpleKaruzi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="99"/>
+        <source>正在获取公告...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="115"/>
+        <source>简介</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="121"/>
+        <source>这是一个专门用于简化 OpenCore EFI 制作流程的工具，通过自动化核心设置步骤并提供标准化配置，旨在减少手动操作的工作量，同时确保黑苹果折腾过程中的准确性。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="183"/>
+        <source>公告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="214"/>
+        <source>OCLP-Mod III - 现已支持 macOS Tahoe 26！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="217"/>
+        <source>期待已久的OCLP-Mod 3.x.x 版本已经发布，为社区带来了&lt;b&gt;对macOS Tahoe 26的初始支持&lt;/b&gt;！&lt;br&gt;&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="218"/>
+        <source>&lt;b&gt;请注意：&lt;/b&gt;&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="219"/>
+        <source>- 只有来自&lt;a href=&quot;https://github.com/laobamac/OCLP-Mod&quot; style=&quot;color: #0078D4; text-decoration: none;&quot;&gt;laobamac/OCLP-Mod&lt;/a&gt;仓库的OCLP-Mod 3.x.x为macOS Tahoe 26提供了早期补丁支持。&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="220"/>
+        <source>- 官方的Dortania版本或旧版补丁&lt;b&gt;将无法工作&lt;/b&gt;于macOS Tahoe 26。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="226"/>
+        <source>警告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="229"/>
+        <source>虽然SimpleKaruzi显著减少了设置时间，但Hackintosh之旅仍然需要：&lt;br&gt;&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="230"/>
+        <source>- 理解&lt;a href=&quot;https://dortania.github.io/OpenCore-Install-Guide/&quot; style=&quot;color: #F57C00; text-decoration: none;&quot;&gt;Dortania指南&lt;/a&gt;中的基本概念&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="231"/>
+        <source>- 在安装过程中进行测试和故障排除&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="232"/>
+        <source>- 耐心和坚持解决出现的任何问题&lt;br&gt;&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="233"/>
+        <source>我们的工具不能保证第一次尝试就能成功安装，但它应该能帮助您开始。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="242"/>
+        <source>快速开始</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="246"/>
+        <source>1. 选择硬件报告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="246"/>
+        <source>选择你要为其构建 EFI 的目标系统的硬件报告。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="247"/>
+        <source>2. 检查兼容性</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="247"/>
+        <source>审查硬件与 macOS 的兼容性。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="248"/>
+        <source>3. 配置设置</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="248"/>
+        <source>自定义 OpenCore EFI 的 ACPI 补丁、驱动（Kexts）和配置。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="249"/>
+        <source>4. 生成 EFI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/home_page.py" line="249"/>
+        <source>生成你的 OpenCore EFI。</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>OCS</name>
     <message>
         <location filename="../SimpleKaruzi.py" line="149"/>
@@ -1103,26 +1231,89 @@
     </message>
 </context>
 <context>
+    <name>ReportDetailsGroup</name>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="40"/>
+        <source>报告路径</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="41"/>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="48"/>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="64"/>
+        <source>未选择</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="47"/>
+        <source>ACPI 目录</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SMBIOSModelCard</name>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="74"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="77"/>
         <source>SMBIOS 机型</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="75"/>
+        <location filename="../Scripts/pages/configuration_page.py" line="78"/>
         <source>为您的系统选择 Mac 机型标识符</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="81"/>
-        <location filename="../Scripts/pages/configuration_page.py" line="95"/>
-        <source>未配置</source>
+        <location filename="../Scripts/pages/configuration_page.py" line="88"/>
+        <source>配置机型</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Scripts/pages/configuration_page.py" line="85"/>
-        <source>配置机型</source>
+        <location filename="../Scripts/pages/configuration_page.py" line="99"/>
+        <source>未配置</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SelectHardwareReportPage</name>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="120"/>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="167"/>
+        <source>选择硬件报告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="121"/>
+        <source>选择你要为其构建 EFI 的目标系统的硬件报告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="147"/>
+        <source>快速指南</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="150"/>
+        <source>&lt;b&gt;Windows 用户：&lt;/b&gt;点击 &lt;span style=&quot;color:#0078D4; font-weight:600;&quot;&gt;导出硬件报告&lt;/span&gt; 按钮为当前系统生成硬件报告。或者，您可以使用 Hardware Sniffer 工具手动生成报告。&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="151"/>
+        <source>&lt;b&gt;Linux/macOS 用户：&lt;/b&gt;请传输在 Windows 上生成的报告。不支持本机生成。</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="161"/>
+        <source>选择方式</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="172"/>
+        <source>导出硬件报告</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/select_hardware_report_page.py" line="190"/>
+        <source>就绪</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1295,6 +1486,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../Scripts/pages/settings_page.py" line="312"/>
+        <source>当前版本: v{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Scripts/pages/settings_page.py" line="319"/>
         <source>启动时检查更新</source>
         <translation type="unfinished"></translation>
@@ -1366,6 +1562,11 @@
     <message>
         <location filename="../Scripts/pages/configuration_page.py" line="30"/>
         <source>选择版本</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Scripts/pages/configuration_page.py" line="39"/>
+        <source>未选择</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

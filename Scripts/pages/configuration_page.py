@@ -23,7 +23,7 @@ class macOSCard(SettingCard):
         )
         self.controller = controller
         
-        self.versionLabel = BodyLabel(self.controller.macos_state.selected_version_name)
+        self.versionLabel = BodyLabel(self._get_display_text(self.controller.macos_state.selected_version_name))
         # 移除强制颜色样式以适配暗夜模式
         self.versionLabel.setStyleSheet("margin-right: 10px;")
         
@@ -35,8 +35,11 @@ class macOSCard(SettingCard):
         self.hBoxLayout.addWidget(self.selectVersionBtn)
         self.hBoxLayout.addSpacing(16)
 
+    def _get_display_text(self, text):
+        return self.tr("未选择") if text == "未选择" else text
+
     def update_version(self):
-        self.versionLabel.setText(self.controller.macos_state.selected_version_name)
+        self.versionLabel.setText(self._get_display_text(self.controller.macos_state.selected_version_name))
 
 class AudioLayoutCard(SettingCard):
     def __init__(self, controller, on_select_layout, parent=None):
@@ -77,7 +80,7 @@ class SMBIOSModelCard(SettingCard):
         )
         self.controller = controller
         
-        model_text = self.controller.smbios_state.model_name if self.controller.smbios_state.model_name != "未选择" else self.tr("未配置")
+        model_text = self._get_display_text(self.controller.smbios_state.model_name)
         self.modelLabel = BodyLabel(model_text)
         # 移除强制颜色样式以适配暗夜模式
         self.modelLabel.setStyleSheet("margin-right: 10px;")
@@ -90,9 +93,13 @@ class SMBIOSModelCard(SettingCard):
         self.hBoxLayout.addWidget(self.selectModelBtn)
         self.hBoxLayout.addSpacing(16)
 
+    def _get_display_text(self, text):
+        if text == "未选择":
+            return self.tr("未配置")
+        return text
+
     def update_model(self):
-        model_text = self.controller.smbios_state.model_name if self.controller.smbios_state.model_name != "未选择" else self.tr("未配置")
-        self.modelLabel.setText(model_text)
+        self.modelLabel.setText(self._get_display_text(self.controller.smbios_state.model_name))
 
 class ConfigurationPage(ScrollArea):
     def __init__(self, parent, ui_utils_instance=None):

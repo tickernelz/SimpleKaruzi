@@ -309,7 +309,7 @@ class SettingsPage(ScrollArea):
         current_ver = getattr(updater, 'CURRENT_VERSION', 'Unknown')
         self.version_card = SettingCard(
             FluentIcon.INFO,
-            f"当前版本: v{current_ver}",
+            self.tr("当前版本: v{}").format(current_ver),
             "SimpleKaruzi",
             group
         )
@@ -467,7 +467,7 @@ class SettingsPage(ScrollArea):
         
         self.lang_card = ComboBoxSettingCard(
             self.lang_config, 
-            FluentIcon.LOCALE_LANGUAGE, 
+            FluentIcon.GLOBE, 
             self.tr("语言"), 
             self.tr("选择应用程序的界面语言。"), 
             lang_items, 
