@@ -1,9 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 
-# Kamus Terjemahan Lengkap (Chinese -> English)
 TRANSLATIONS = {
-    # Home Page
     "欢迎使用 SimpleKaruzi": "Welcome to SimpleKaruzi",
     "简介": "Introduction",
     "这是一个专门用于简化 OpenCore EFI 制作流程的工具，通过自动化核心设置步骤并提供标准化配置，旨在减少手动操作的工作量，同时确保黑苹果折腾过程中的准确性。": "This is a tool specifically designed to simplify the OpenCore EFI creation process. By automating core setup steps and providing standardized configurations, it aims to reduce manual workload while ensuring accuracy during your Hackintosh journey.",
@@ -29,19 +27,8 @@ TRANSLATIONS = {
     "- 只有来自<a href=\"https://github.com/laobamac/OCLP-Mod\" style=\"color: #0078D4; text-decoration: none;\">laobamac/OCLP-Mod</a>仓库的OCLP-Mod 3.x.x为macOS Tahoe 26提供了早期补丁支持。<br>": "- Only OCLP-Mod 3.x.x from the <a href=\"https://github.com/laobamac/OCLP-Mod\" style=\"color: #0078D4; text-decoration: none;\">laobamac/OCLP-Mod</a> repository provides early patch support for macOS Tahoe 26.<br>",
     "- 官方的Dortania版本或旧版补丁<b>将无法工作</b>于macOS Tahoe 26。": "- Official Dortania versions or older patches <b>will NOT work</b> on macOS Tahoe 26.",
     "警告": "Warning",
-    # Warning Card (Split strings)
-    "虽然SimpleKaruzi显著减少了设置时间，但Hackintosh之旅仍然需要：<br><br>": "While SimpleKaruzi significantly reduces setup time, the Hackintosh journey still requires:<br><br>",
-    "- 理解<a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania指南</a>中的基本概念<br>": "- Understanding basic concepts in the <a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania Guide</a><br>",
-    "- 在安装过程中进行测试和故障排除<br>": "- Testing and troubleshooting during installation<br>",
-    "- 耐心和坚持解决出现的任何问题<br><br>": "- Patience and persistence to solve any issues<br><br>",
-    "我们的工具不能保证第一次尝试就能成功安装，但它应该能帮助您开始。": "Our tool does not guarantee a successful installation on the first try, but it should help you get started.",
-
-    # Settings Page - Version
-    "当前版本: v{}": "Current Version: v{}",
-    "当前版本: {}": "Current Version: {}",
-
-    # Select Hardware Report Page
-
+    "虽然SimpleKaruzi显著减少了设置时间，但Hackintosh之旅仍然需要：<br><br>- 理解<a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania指南</a>中的基本概念<br>- 在安装过程中进行测试和故障排除<br>- 耐心和坚持解决出现的任何问题<br><br>我们的工具不能保证第一次尝试就能成功安装，但它应该能帮助您开始。": "While SimpleKaruzi significantly reduces setup time, the Hackintosh journey still requires:<br><br>- Understanding basic concepts in the <a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania Guide</a><br>- Testing and troubleshooting during installation<br>- Patience and persistence to solve any issues<br><br>Our tool does not guarantee a successful installation on the first try, but it should help you get started.",
+    "快速开始": "Quick Start",
     "1. 选择硬件报告": "1. Select Hardware Report",
     "选择你要为其构建 EFI 的目标系统的硬件报告。": "Select the hardware report for the target system you want to build the EFI for.",
     "2. 检查兼容性": "2. Check Compatibility",
@@ -50,8 +37,6 @@ TRANSLATIONS = {
     "自定义 OpenCore EFI 的 ACPI 补丁、驱动（Kexts）和配置。": "Customize ACPI patches, drivers (Kexts), and configuration for OpenCore EFI.",
     "4. 生成 EFI": "4. Generate EFI",
     "生成你的 OpenCore EFI。": "Generate your OpenCore EFI.",
-
-    # Select Hardware Report Page
     "选择硬件报告": "Select Hardware Report",
     "选择你要为其构建 EFI 的目标系统的硬件报告": "Select the hardware report for the target system you want to build the EFI for",
     "选择方式": "Selection Method",
@@ -60,8 +45,6 @@ TRANSLATIONS = {
     "就绪": "Ready",
     "报告概览": "Report Overview",
     "硬件报告加载成功": "Hardware report loaded successfully",
-    "未选择": "Not Selected", # Added this line
-
     "正在解析报告...": "Parsing report...",
     "正在生成报告...": "Generating report...",
     "正在读取文件...": "Reading file...",
@@ -80,8 +63,6 @@ TRANSLATIONS = {
     "报告路径": "Report Path",
     "ACPI 目录": "ACPI Directory",
     "未选择": "Not Selected",
-
-    # Compatibility Page
     "硬件兼容性": "Hardware Compatibility",
     "查看硬件与 macOS 的兼容性": "Check hardware compatibility with macOS",
     "详细信息": "Details",
@@ -142,8 +123,6 @@ TRANSLATIONS = {
     "硬件限制": "Hardware Limitation",
     "macOS 的生物识别验证需要 Apple T2 芯片，黑苹果系统无法支持。": "Biometric authentication in macOS requires Apple T2 chip, which is not supported on Hackintosh.",
     "SD 控制器": "SD Controller",
-
-    # Configuration Page
     "配置": "Configuration",
     "配置您的 OpenCore EFI 设置": "Configure your OpenCore EFI settings",
     "兼容性状态": "Compatibility Status",
@@ -174,8 +153,6 @@ TRANSLATIONS = {
     "为您的系统选择 Mac 机型标识符": "Select a Mac model identifier for your system",
     "配置机型": "Configure Model",
     "SMBIOS 机型已更新为 {}": "SMBIOS model updated to {}",
-
-    # Build Page
     "构建 OpenCore EFI": "Build OpenCore EFI",
     "构建准备安装的定制化 OpenCore EFI": "Build customized OpenCore EFI ready for installation",
     "使用前必读": "Read Before Use",
@@ -217,8 +194,6 @@ TRANSLATIONS = {
     "步骤 {}/{}": "Step {}/{}",
     "[构建] {} 完成！": "[Build] {} Completed!",
     "[构建] 步骤 {}/{}: {}...": "[Build] Step {}/{}: {}...",
-
-    # Settings Page
     "设置": "Settings",
     "配置 SimpleKaruzi 首选项": "Configure SimpleKaruzi preferences",
     "构建输出": "Build Output",
@@ -294,8 +269,6 @@ TRANSLATIONS = {
     "重置所有设置": "Reset All Settings",
     "确定要重置所有设置吗？": "Are you sure you want to reset all settings?",
     "所有设置已重置": "All settings have been reset",
-
-    # Custom Dialogs
     "确定": "OK",
     "取消": "Cancel",
     "是": "Yes",
@@ -314,11 +287,7 @@ TRANSLATIONS = {
     "下载中": "Downloading",
     "正在连接...": "Connecting...",
     "正在取消...": "Cancelling...",
-
-    # UI Utils
     "STEP {} OF {}": "STEP {} OF {}",
-
-    # SimpleKaruzi.py / OCS
     "发现 SKSP 资源包更新": "SKSP Resource Package Update Found",
     "检测到新版本的 SKSP 资源包 (v{})。<br>发布日期: {}<br><br>{}<br><br>更新资源包可以提高硬件识别准确率和驱动兼容性。<br>是否立即更新？": "A new version of SKSP resource package (v{}) was detected.<br>Release Date: {}<br><br>{}<br><br>Updating the resource package can improve hardware recognition accuracy and driver compatibility.<br>Update now?",
     "立即更新": "Update Now",
@@ -328,9 +297,16 @@ TRANSLATIONS = {
     "提示": "Info",
     "请先加载 ACPI 表": "Please load ACPI table first",
     "检测到不兼容的硬件，请选择其他硬件报告并重试": "Incompatible hardware detected, please select another hardware report and try again",
-    "请重新加载硬件报告并选择目标 macOS 版本以继续": "Please reload hardware report and select target macOS version to continue"
+    "请重新加载硬件报告并选择目标 macOS 版本以继续": "Please reload hardware report and select target macOS version to continue",
+    "虽然SimpleKaruzi显著减少了设置时间，但Hackintosh之旅仍然需要：<br><br>": "While SimpleKaruzi significantly reduces setup time, the Hackintosh journey still requires:<br><br>",
+    "- 理解<a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania指南</a>中的基本概念<br>": "- Understanding basic concepts in the <a href=\"https://dortania.github.io/OpenCore-Install-Guide/\" style=\"color: #F57C00; text-decoration: none;\">Dortania Guide</a><br>",
+    "- 在安装过程中进行测试和故障排除<br>": "- Testing and troubleshooting during installation<br>",
+    "- 耐心和坚持解决出现的任何问题<br><br>": "- Patience and persistence to solve any issues<br><br>",
+    "我们的工具不能保证第一次尝试就能成功安装，但它应该能帮助您开始。": "Our tool does not guarantee a successful installation on the first try, but it should help you get started.",
+    "当前版本: v{}": "Current Version: v{}",
+    "当前版本: {}": "Current Version: {}",
+    "未选择": "Not Selected"
 }
-
 
 def get_context_from_filename(filename):
     if "settings_page.py" in filename: return "SettingsPage"
@@ -341,19 +317,10 @@ def get_context_from_filename(filename):
     if "select_hardware_report_page.py" in filename: return "SelectHardwareReportPage"
     if "custom_dialogs.py" in filename: return "CustomDialogs"
     if "ui_utils.py" in filename: return "UIUtils"
-    if "ReportDetailsGroup" in filename: return "ReportDetailsGroup" # Unlikely to be in filename
-    if "macOSCard" in filename: return "macOSCard" # Also unlikely
-    
-    # Refined mapping based on known classes in files
-    if "configuration_page.py" in filename:
-        # Check source text to disambiguate? No, hard.
-        # But we can check if it matches specific strings unique to sub-classes.
-        return "ConfigurationPage" # Default
-        
+    if "SimpleKaruzi.py" in filename: return "OCS"
     return ""
 
 def refine_context(context_name, source_text):
-    # Fix contexts for nested classes based on unique strings
     if context_name == "ConfigurationPage":
         if "音频布局 ID" in source_text or "Audio Layout ID" in source_text: return "AudioLayoutCard"
         if "SMBIOS 机型" in source_text or "SMBIOS Model" in source_text: return "SMBIOSModelCard"
@@ -362,6 +329,7 @@ def refine_context(context_name, source_text):
     if context_name == "SelectHardwareReportPage":
         if "报告路径" in source_text or "Report Path" in source_text: return "ReportDetailsGroup"
         if "ACPI 目录" in source_text or "ACPI Directory" in source_text: return "ReportDetailsGroup"
+        if "未选择" in source_text or "Not Selected" in source_text: return "ReportDetailsGroup" # Added refinement for generic string in this context
         
     return context_name
 
@@ -372,23 +340,12 @@ def translate_ts(ts_path):
         tree = ET.parse(ts_path)
         root = tree.getroot()
         
-        # Ensure language attribute
         root.set('language', 'en_US')
         
-        # Group messages by context (filename based)
-        # lupdate generated a single context with <name/>. We need to split or rename it.
-        # But iterating and modifying the XML structure in place is tricky.
-        # Instead, let's fix the <name> if it's empty, but wait, multiple files are in one context?
-        
-        # Let's inspect the structure. If lupdate put ALL messages in ONE empty context,
-        # we need to regroup them.
-        
-        # Strategy: Create a new root, iterate all messages, assign to correct context.
         new_root = ET.Element("TS", version="2.1", language="en_US")
         
-        contexts = {} # name -> context_element
+        contexts = {}
         
-        # Flatten all messages from all contexts in source
         all_messages = []
         for context in root.findall('context'):
             all_messages.extend(context.findall('message'))
@@ -400,13 +357,11 @@ def translate_ts(ts_path):
             filename = location.attrib.get('filename', '')
             context_name = get_context_from_filename(filename)
             
-            # Translate first to help refinement (optional)
             source_node = message.find('source')
             translation_node = message.find('translation')
             
             source_text = source_node.text if source_node is not None else ""
             
-            # Refine context
             context_name = refine_context(context_name, source_text)
             
             if context_name not in contexts:
@@ -414,10 +369,6 @@ def translate_ts(ts_path):
                 name_node = ET.SubElement(ctx_node, "name")
                 name_node.text = context_name
                 contexts[context_name] = ctx_node
-            
-            # Translate
-            source_node = message.find('source')
-            translation_node = message.find('translation')
             
             if source_node is not None:
                 source_text = source_node.text
@@ -432,10 +383,6 @@ def translate_ts(ts_path):
             
             contexts[context_name].append(message)
             
-        # --- INJECTION LOGIC START ---
-        # Force inject missing contexts and messages that might have been mis-assigned or merged
-        
-        # Define injections: Context -> {Source -> Translation}
         injections = {
             "SMBIOSModelCard": {
                 "未配置": "Not Configured",
@@ -465,14 +412,12 @@ def translate_ts(ts_path):
         }
         
         for ctx_name, msgs in injections.items():
-            # Check if context exists
             if ctx_name not in contexts:
                 ctx_node = ET.SubElement(new_root, "context")
                 name_node = ET.SubElement(ctx_node, "name")
                 name_node.text = ctx_name
                 contexts[ctx_name] = ctx_node
             
-            # Check if message exists in context, if not add it
             existing_sources = set()
             for msg in contexts[ctx_name].findall('message'):
                 src = msg.find('source')
@@ -481,18 +426,12 @@ def translate_ts(ts_path):
             
             for src_text, trans_text in msgs.items():
                 if src_text not in existing_sources:
-                    # Create new message node
                     msg_node = ET.SubElement(contexts[ctx_name], "message")
-                    # We don't have location for injected messages, but that's fine for lrelease
                     src_node = ET.SubElement(msg_node, "source")
                     src_node.text = src_text
                     trans_node = ET.SubElement(msg_node, "translation")
                     trans_node.text = trans_text
-                    print(f"Injected '{src_text}' into context '{ctx_name}'")
-
-        # --- INJECTION LOGIC END ---
-            
-        # Overwrite file with new structure
+        
         new_tree = ET.ElementTree(new_root)
         new_tree.write(ts_path, encoding='utf-8', xml_declaration=True)
         print(f"Successfully restructured and translated {ts_path}")
@@ -502,3 +441,4 @@ def translate_ts(ts_path):
 
 if __name__ == "__main__":
     translate_ts("Translations/en_US.ts")
+

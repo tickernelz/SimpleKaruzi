@@ -1334,7 +1334,7 @@ Patched extended support: {}</translation>
     <message>
         <location filename="../Scripts/pages/home_page.py" line="242" />
         <source>快速开始</source>
-        <translation type="unfinished" />
+        <translation>Quick Start</translation>
     </message>
     <message>
         <location filename="../Scripts/pages/home_page.py" line="246" />
@@ -1376,7 +1376,7 @@ Patched extended support: {}</translation>
         <source>生成你的 OpenCore EFI。</source>
         <translation>Generate your OpenCore EFI.</translation>
     </message>
-</context><context><name /><message>
+</context><context><name>OCS</name><message>
         <location filename="../SimpleKaruzi.py" line="149" />
         <source>发现 SKSP 资源包更新</source>
         <translation>SKSP Resource Package Update Found</translation>
@@ -1491,14 +1491,14 @@ Patched extended support: {}</translation>
         <source>查看选定的报告路径和验证状态</source>
         <translation>View selected report path and validation status</translation>
     </message>
-<message><source>未选择</source><translation>Not Selected</translation></message><message><source>硬件报告详情</source><translation>Hardware Report Details</translation></message></context><context><name>SelectHardwareReportPage</name><message>
+<message>
         <location filename="../Scripts/pages/select_hardware_report_page.py" line="41" />
         <location filename="../Scripts/pages/select_hardware_report_page.py" line="48" />
         <location filename="../Scripts/pages/select_hardware_report_page.py" line="64" />
         <source>未选择</source>
         <translation>Not Selected</translation>
     </message>
-    <message>
+    <message><source>硬件报告详情</source><translation>Hardware Report Details</translation></message></context><context><name>SelectHardwareReportPage</name><message>
         <location filename="../Scripts/pages/select_hardware_report_page.py" line="22" />
         <source>硬件报告详情</source>
         <translation>Hardware Report Details</translation>
