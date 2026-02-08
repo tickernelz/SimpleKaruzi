@@ -59,7 +59,7 @@ jobs:
     - name: Build with PyInstaller (macOS)
       if: runner.os == 'macOS'
       run: |
-        pyinstaller --noconfirm --onefile --windowed --name "SimpleKaruzi" --add-data "Translations:Translations" --add-data "icon.png:." --add-data "Scripts/iasl-stable:Scripts" --add-data "Scripts/macserial:Scripts" --icon "icon.icns" --hidden-import "PyQt6.sip" --target-architecture x86_64 SimpleKaruzi.py
+        pyinstaller --noconfirm --onedir --windowed --name "SimpleKaruzi" --add-data "Translations:Translations" --add-data "icon.png:." --add-data "Scripts/iasl-stable:Scripts" --add-data "Scripts/macserial:Scripts" --icon "icon.icns" --hidden-import "PyQt6.sip" --target-architecture x86_64 SimpleKaruzi.py
 
     - name: Archive Release (Windows)
       if: runner.os == 'Windows'
