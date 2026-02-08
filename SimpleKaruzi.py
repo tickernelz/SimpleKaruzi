@@ -426,29 +426,22 @@ if __name__ == "__main__":
     
     translator = QTranslator()
     
-    # 1. Get language setting
     lang_setting = backend.settings.get("language")
     
     qm_file = ""
     
-    # 2. Determine target QM file
     if lang_setting == "Auto" or not lang_setting:
         locale = QLocale.system()
-        # Check system language, prioritized:
-        # If system is Chinese -> zh_CN.qm
-        # Otherwise -> en_US.qm (default)
         if locale.language() == QLocale.Language.Chinese:
             qm_file = "Translations/zh_CN.qm"
         else:
             qm_file = "Translations/en_US.qm"
     else:
-        # Manual setting
         if lang_setting == "zh_CN":
             qm_file = "Translations/zh_CN.qm"
         elif lang_setting == "en_US":
             qm_file = "Translations/en_US.qm"
     
-    # 3. Load translation if file exists
     if qm_file and os.path.exists(qm_file):
         if translator.load(qm_file):
             app.installTranslator(translator)
